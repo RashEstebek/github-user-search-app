@@ -17,30 +17,45 @@
   };
 </script>
 
-<main>
+<main class="main">
+  <nav class="nav">
+    <span class="devfinder">devfinder</span>
+    <span class="light-dark">LIGHT</span>
+  </nav>
   <UserSearch />
+  <article class="article">
+    <section class="section">
+      <picture>
+        <img src="../public/Oval.png" alt="Octocat">
+      </picture>
+      <div>
+        <p>The Octocat</p>
+        <span>@octocat</span>
+        <small>Joined 25 Jan 2011</small>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>
+      </div>
+    </section>
 
-  {#if users}
-    <ul>
-      {#each users as user}
-        <li>
-          <User username={user.login} avatar={user.avatar_url} />
-        </li>
-      {/each}
-    </ul>
-  {/if}
+    <section class="followers">
+      <div class="sub">
+        <div class="words">
+          <p>Repos</p>
+          <p>Followers</p>
+          <p>Following</p>
+        </div>
+  
+        <div class="numbers">
+          <p>8</p>
+          <p>3938</p>
+          <p>9</p>
+        </div>
+      </div>
+      
+    </section>
+    
+
+  </article>
 </main>
 
 <style>
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-flow: wrap;
-  }
-  li {
-    width: 20%;
-    margin-bottom: 20px;
-  }
 </style>

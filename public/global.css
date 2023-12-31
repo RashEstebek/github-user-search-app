@@ -5,12 +5,11 @@ html, body {
 }
 
 body {
-	background-color: aqua;
+	background-color: #F6F8FF;;
 	color: #333;
 	margin: 0;
-	padding: 8px;
 	box-sizing: border-box;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: 'Space Mono', sans-serif;
 }
 
 a {
@@ -35,11 +34,18 @@ input, button, select, textarea {
 	font-size: inherit;
 	-webkit-padding: 0.4em 0;
 	padding: 0.4em;
-	margin: 0 0 0.5em 0;
 	box-sizing: border-box;
 	border: 1px solid #ccc;
 	border-radius: 2px;
 }
+
+input {
+	caret-color: #0079FF;
+  }
+
+input:focus {
+	outline: none;
+  }
 
 input:disabled {
 	color: #ccc;
@@ -61,4 +67,77 @@ button:not(:disabled):active {
 
 button:focus {
 	border-color: #666;
+}
+
+.main {
+	padding: 144px 355px 144px 170px;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 35px;
+}
+
+.light-dark {
+	font-size: 13px;
+}
+
+.devfinder {
+	font-size: 26px;
+	font-weight: 700;
+}
+
+.formochka {
+	display: flex;
+	justify-content: space-between;
+}
+
+.input {
+	border: 0;
+}
+
+.button {
+	border-radius: 10px;
+	background: #0079FF;
+	color: white;
+	padding: 13px;
+	min-width: 106px;
+}
+
+.button:hover {
+	background: #60ABFF;
+}
+
+.wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 23px;
+}
+
+.section {
+	display: flex;
+	justify-content: space-between;
+}
+
+.followers {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-top: 32px;
+}
+
+.article {
+	background: #FEFEFE;
+}
+
+.numbers {
+	display: flex;
+	justify-content: space-around;
+}
+
+.words {
+	display: flex;
+	justify-content: space-around;
 }
